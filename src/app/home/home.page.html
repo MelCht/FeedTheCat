@@ -1,20 +1,23 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title> Feed your pet </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-label>
+        Prochaine alerte dans :
+        {{ remainingTime / (60 * 1000) | number: '1.0-0' }} minutes
+      </ion-label>
+    </ion-card-content>
+  </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-button expand="full" (click)="startTimer()"
+    >"Je viens de me réveiller"</ion-button
+  >
+  <ion-button expand="full" (click)="stopTimer()"
+    >Arrêter le minuteur</ion-button
+  >
 </ion-content>

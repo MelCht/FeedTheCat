@@ -26,9 +26,10 @@
     "@capacitor/haptics": "5.0.6",
     "@capacitor/keyboard": "5.0.7",
     "@capacitor/status-bar": "5.0.6",
+    "@ionic-native/local-notifications": "^5.36.0",
     "@ionic/angular": "^7.0.0",
     "ionicons": "^7.0.0",
-    "rxjs": "~7.8.0",
+    "rxjs": "^6.6.7",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
   },
@@ -48,9 +49,11 @@
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "cordova-android": "^12.0.1",
+    "cordova-plugin-badge": "^0.8.9",
     "cordova-plugin-device": "2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^5.0.0",
+    "cordova-plugin-local-notification": "^0.9.0-beta.2",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "^2.4.2",
     "eslint": "^7.26.0",
@@ -74,7 +77,8 @@
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-local-notification": {}
     },
     "platforms": [
       "android"
